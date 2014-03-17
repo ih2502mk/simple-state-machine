@@ -1,0 +1,28 @@
+{
+  "name": "simple-state-machine",
+  "version": "0.0.0",
+  "description": "A generic api for creating and running state machines.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./test/test_machine.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ih2502mk/simple-state-machine.git"
+  },
+  "keywords": [
+    "state",
+    "machine",
+    "NFA",
+    "automata"
+  ],
+  "author": "Ihor Marusyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ih2502mk/simple-state-machine/issues"
+  },
+  "homepage": "https://github.com/ih2502mk/simple-state-machine"
+}
