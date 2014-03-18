@@ -29,19 +29,22 @@ machine.push('@');
 
 ## API
 
-`machine.addTransition(stateFrom, stateTo, transitionCallback[, arrivalCallback])`
-
-Add transition to a state machine.
-`stateFrom` - String - name of state transition starts from.
-`stateTo` - String - name of state transition goes to.
-`transitionCallback` - Function - a function that will be called on attempt to transit, it will be passed one parameter being an object that is pushed to sate machine.
+```javasscrpt
+machine.addTransition(stateFrom, stateTo, transitionCallback[, arrivalCallback])
+```
+Add transition to a state machine.<br />
+`stateFrom` - String - name of state transition starts from.<br />
+`stateTo` - String - name of state transition goes to.<br />
+`transitionCallback` - Function - a function that will be called on attempt to transit, it will be passed one parameter being an object that is pushed to sate machine.<br />
 `arrivalCallback` - Function - (optional) a function that will be called when state machine arrives to stateTo on successful transition.
 
-`machine.push(object)`
-
-Push object through state machine. 
+```javascript
+machine.push(object)
+```
+Push object through state machine.<br />
 `object` - Any Type - this object will be sent to transition callbacks for all transition that go out of current state of a state machine. If transition callback after doing some logic with the objwct ereturn true machine transits to the according state.
 
-`machine.currentStateNames[]`
-
+```javascript
+machine.currentStateNames[]
+```
 Array of state names that the machine is currently in. Should be used once to set initial state.
