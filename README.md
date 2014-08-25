@@ -42,7 +42,7 @@ Add transition to a state machine.<br />
 machine.push(object)
 ```
 Push object through state machine.<br />
-`object` - Any Type - this object will be sent to transition callbacks for all transition that go out of current state of a state machine. If transition callback after doing some logic with the objwct ereturn true machine transits to the according state.
+`object` - Any Type - this object will be sent to transition callbacks for all transition that go out of current state of a state machine. If transition callback, after doing some logic with the object, returns true, machine transits to the according state.
 
 ```javascript
 machine.currentStateNames[]
