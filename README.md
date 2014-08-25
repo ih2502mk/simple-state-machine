@@ -9,7 +9,7 @@ var SimpleStateMachine = require('simple-state-machine');
 var machine = new SimpleStateMachine();
 
 machine.addTransition('state-1', 'state-2', function(object) {
-  // Check if object satisfies rtansition condition
+  // Check if object satisfies transition condition
   if (object === "@") {
     return true;
   }
